@@ -13,16 +13,18 @@
 	</div>
 	<div class='container'>
 	<section id="landing_page">
-	<div class="row">
-		<div class="span6">
-			<!-- <g:img dir="images" file="surveyor_home.png" /> mesti cari image aslinya -->
-			<button class="btn btn-large btn-block btn-primary" type="button">Bikin Survey</button>
-		</div>
-		<div class="span6">
-			<!-- <g:img dir="images" file="respondent_home.png" /> mesti cari image aslinya -->
-			<button class="btn btn-large btn-block btn-primary" type="button">Jadi Responden</button>
-		</div>
-	</div>
+		<g:form >
+			<div class="row">
+				<div class="span6">
+					<!-- <g:img dir="images" file="surveyor_home.png" /> mesti cari image aslinya -->
+					<g:submitButton name="surveyor" value="Bikin Survey" class="btn btn-large btn-block btn-primary"/>
+				</div>
+				<div class="span6">
+					<!-- <g:img dir="images" file="respondent_home.png" /> mesti cari image aslinya -->
+					<g:submitButton name="responden" value="Jadi Responden" class="btn btn-large btn-block btn-primary"/>
+				</div>
+			</div>
+		</g:form>
 	</section>
 	</div>
 </body>
