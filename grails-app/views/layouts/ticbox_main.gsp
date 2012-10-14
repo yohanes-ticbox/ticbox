@@ -1,12 +1,10 @@
 <html>
    <head>
-      <meta name="layout" content="main"/>
       <r:require modules="bootstrap"/>
-      <g:layoutHead/>
 	  <r:layoutResources />
+      <g:layoutHead/>
    </head>
 <body>
-  
  <div class="container">
  	<div class="row">
  		<div class="span6">
