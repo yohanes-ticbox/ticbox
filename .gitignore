@@ -14,6 +14,7 @@
 *.class
 /*.launch
 /*.tmproj
+/target*
 
 # logs
 stacktrace.log
@@ -21,3 +22,8 @@ stacktrace.log
 
 # project release file
 *.war
+*.class
+
+*.class
+
+*.class
