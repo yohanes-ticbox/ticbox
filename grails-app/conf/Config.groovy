@@ -89,3 +89,22 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+// Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.chicow.ticbox.security.User'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.chicow.ticbox.security.UserRole'
+grails.plugins.springsecurity.authority.className = 'com.chicow.ticbox.security.Role'
+
+grails {
+   mail {
+     host = "smtp.gmail.com"
+	 username="kucingkurus@gmail.com"
+	 password="atlantis"
+     port = 587
+     props = ["mail.smtp.starttls.enable":"true", 
+                  "mail.smtp.port":"587"]
+   }
+
+}
+mail.default.from="noreply@ticbox.co"
+

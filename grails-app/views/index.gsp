@@ -13,15 +13,14 @@
 	</div>
 	<div class='container'>
 	<section id="landing_page">
-		<g:form >
+		<g:form controller ="home">
 			<div class="row">
 				<div class="span6">
 					<!-- <g:img dir="images" file="surveyor_home.png" /> mesti cari image aslinya -->
 					<g:submitButton name="surveyor" value="Bikin Survey" class="btn btn-large btn-block btn-primary"/>
 				</div>
 				<div class="span6">
-					<!-- <g:img dir="images" file="respondent_home.png" /> mesti cari image aslinya -->
-					<g:submitButton name="responden" value="Jadi Responden" class="btn btn-large btn-block btn-primary"/>
+					<g:actionSubmit name="surveyor" value="Jadi Respondent" action="respondentRegister" class="btn btn-large btn-block btn-primary"/>
 				</div>
 			</div>
 		</g:form>
