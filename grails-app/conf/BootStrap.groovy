@@ -3,6 +3,16 @@ import com.chicow.ticbox.security.*;
 class BootStrap {
 
     def init = { servletContext ->
+	   // create-drop mongodb schema when in development mode
+		environments {
+		    development {
+		      // drop database
+		      def mongo = new GMongo()
+		      def db = mongo.getDB('ticbox')
+		      db.dropDatabase()
+		    }
+		  }
+		
 		def adminRole = Role.findByAuthority('ROLE_ADMIN')? Role.findByAuthority('ROLE_ADMIN'):new Role(authority: 'ROLE_ADMIN').save(flush: true) 
 		def respondentRole =Role.findByAuthority('ROLE_RESPONDENT')? Role.findByAuthority('ROLE_RESPONDENT'):new Role(authority: 'ROLE_RESPONDENT').save(flush: true) 
 		def surveyorRole = Role.findByAuthority('ROLE_SURVEYOR')? Role.findByAuthority('ROLE_SURVEYOR'):new Role(authority: 'ROLE_SURVEYOR').save(flush: true)
