@@ -14,10 +14,8 @@ environments {
     development {
         grails {
 		    mongo {
-		        host = "localhost"
+		        host = "127.0.0.1"
 		        port = 27017
-		        username = ""
-		        password = ""
 		        databaseName = "ticbox"
 		    }
 		}
@@ -25,7 +23,7 @@ environments {
     test {
         grails {
 		    mongo {
-		        host = "localhost"
+		        host = "127.0.0.1"
 		        port = 27017
 		        username = ""
 		        password = ""
@@ -36,7 +34,7 @@ environments {
     production {
         grails {
 		    mongo {
-		        host = "localhost"
+		        host = "127.0.0.1"
 		        port = 27017
 		        username = ""
 		        password = ""
