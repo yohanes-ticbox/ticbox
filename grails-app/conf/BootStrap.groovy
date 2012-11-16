@@ -1,4 +1,5 @@
 import com.chicow.ticbox.security.*;
+import com.gmongo.GMongo
 
 class BootStrap {
 
