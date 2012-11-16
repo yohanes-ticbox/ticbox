@@ -1,7 +1,9 @@
 package com.chicow.ticbox.security
 
-class Role {
+import org.bson.types.ObjectId
 
+class Role {
+	ObjectId id
 	String authority
 
 	static mapping = {

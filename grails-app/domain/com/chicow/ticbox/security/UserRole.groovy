@@ -1,9 +1,11 @@
 package com.chicow.ticbox.security
 
 import org.apache.commons.lang.builder.HashCodeBuilder
+import org.bson.types.ObjectId
 
 class UserRole implements Serializable {
-
+	
+	ObjectId id
 	User user
 	Role role
 

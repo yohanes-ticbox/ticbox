@@ -1,11 +1,13 @@
 package com.chicow.ticbox.security
 
 import com.chicow.ticbox.data.*
+import org.bson.types.ObjectId
 
 class User {
 
+	ObjectId id
 	transient springSecurityService
-
+	
 	String username
 	String password
 	boolean enabled

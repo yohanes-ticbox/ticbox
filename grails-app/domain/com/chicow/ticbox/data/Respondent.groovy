@@ -1,6 +1,9 @@
 package com.chicow.ticbox.data
 
+import org.bson.types.ObjectId
+
 class Respondent {
+	ObjectId id
 	String country
 	String province
 	String city
