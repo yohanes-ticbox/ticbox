@@ -23,7 +23,7 @@ class BootStrap {
 
 		  if (UserRole.findByUser(adminUser) == null) UserRole.create adminUser, adminRole, true
 
-		  assert User.count() == 1; assert Role.count() == 3; assert UserRole.count() == 1;
+/*		  assert User.count() == 1; assert Role.count() == 3; assert UserRole.count() == 1;*/
 		
 	
     }

@@ -104,6 +104,10 @@ class RegisterController extends grails.plugins.springsecurity.ui.RegisterContro
 				TransactionAspectSupport.currentTransactionStatus().setRollbackOnly()
 				return
 			}
+			
+			//assign to respondent role
+			def respondentRole =Role.findByAuthority('ROLE_RESPONDENT')
+			UserRole.create user, respondentRole, true
 
 			def registrationCode = new RegistrationCode(username: user."$usernameFieldName")
 			if (!registrationCode.save()) {
